@@ -1,0 +1,18 @@
+def last2(str):
+  length = len(str)
+  substring = str[length-2:]
+  first = 0
+  second = 1
+  count = 0
+  temp = ""
+  while first <= (length - 3) and second <= length - 2:
+    temp = str[first:second+1]
+    if temp == substring:
+      count = count + 1
+      first = first + 1
+      second = second + 1
+    else:
+      first = first + 1
+      second = second + 1
+  return count
+  
