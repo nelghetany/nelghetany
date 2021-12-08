@@ -1,0 +1,11 @@
+def string_bits(str):
+  n = 0
+  temp = ""
+  length = len(str)
+  if len(str) <= 1:
+    return str
+  else:
+    while n < length:
+      temp = temp + str[n]
+      n = n + 2
+  return temp    
