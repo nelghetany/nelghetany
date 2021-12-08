@@ -1,0 +1,8 @@
+def string_splosion(str):
+  n = 0
+  temp = ""
+  length = len(str)
+  while n < length:
+    temp = temp + str[:n+1]
+    n = n + 1
+  return temp
